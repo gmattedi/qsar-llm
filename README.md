@@ -31,16 +31,22 @@ its queries
 | `predict_molecule`              | Predict the activity of a molecule given a model    |
 
 ## Notebook
+
 Check the [Jupyter Notebook](qsar-llm.ipynb) for examples
+
 ## Example
+
 The query
+
 ````python
 text = """
 Train a regression model to predict activity for JAK2 using a fresh ChEMBL data package for the target.
 Make sure to resolve the protein name to the correct ChEMBL target ID"""
 agent.run(text)
 ````
+
 Returns
+
 ````text
 > Entering new AgentExecutor chain...
 

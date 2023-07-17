@@ -10,10 +10,11 @@ import requests
 import tqdm as t
 from chembl_webresource_client.new_client import new_client
 from langchain.tools import tool
+from langchain.tools.base import ToolException
 from pydantic import BaseModel, Field
 from rdkit import Chem
 from rdkit.Chem import inchi
-from langchain.tools.base import ToolException
+
 from autoqsar import AutoQsar, train_autoqsar_model
 
 activity = new_client.activity

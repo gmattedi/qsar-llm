@@ -14,6 +14,7 @@ class Featurizer:
     """
     Molecule featurizer - uses RDKit's Morgan fingerprints
     """
+
     def __init__(self, radius: int = 2, n_bits: int = 1024):
         """
         Initialize the featurizer
@@ -47,6 +48,7 @@ class AutoQsar:
     """
     Wrapper around lightgbm's LGBMRegressor and LGBMClassifier
     """
+
     def __init__(self, mode: str = "regression", **featurizer_kwargs):
         """
         Initialize AutoQsar
